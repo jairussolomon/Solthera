@@ -1,0 +1,563 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Tue Jun 16 12:59:31 2026
+Host:		cad312vitcc.vit.ac.in (x86_64 w/Linux 4.18.0-553.89.1.el8_10.x86_64) (16cores*64cpus*INTEL(R) XEON(R) GOLD 6526Y 38400KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[12:59:31.328618] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (4126 mbytes). Set global soft_stack_size_limit to change the value.
+Sourcing startup file ./enc.tcl
+<CMD> setNanoRouteMode -routeIgnoreAntennaTopCellPin false
+<CMD> set_message -suppress -id IMPLF-201
+<CMD> set_message -suppress -id TECHLIB-436
+<CMD> set_message -suppress -id IMPEXT-2760
+<CMD> set_message -suppress -id IMPEXT-2710
+<CMD> set_message -suppress -id IMPEXT-2771
+<CMD> set_message -suppress -id IMPEXT-6140
+<CMD> set_message -suppress -id NRDB-728
+<CMD> set_message -suppress -id NRDB-2077
+<CMD> set_message -suppress -id NRDB-2078
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> restoreDesign DATA/route.enc.dat leon
+#% Begin load design ... (date=06/16 13:00:01, mem=1020.6M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPIMEX-4008):	Variable 'lsgOCPGainMult' is no longer supported in user data manager and will be ignored.
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_minmax_delay_segmentation' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_number_worker_thread' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_disable_inferred_clock_gating_checks_sequential' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_case_analysis_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_pulse_width_check' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_efficient_input_output_delay_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_pessimistic_cppr_mode' specified
+**WARN: (TCLCMD-1496):	The option 'statistical' specified for 'timing_socv_statistical_min_max_mode' is obsolete and will be removed in a future release of the software. Cadence recommends using 'mean_and_three_sigma_bounded' for the SOCV max operation.
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_minmax_delay_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_path_adjust_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_clock2clock_path_exception_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_latch_budget_mode' specified
+% Begin Load MMMC data ... (date=06/16 13:00:01, mem=1021.7M)
+% End Load MMMC data ... (date=06/16 13:00:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1022.2M, current mem=1022.2M)
+rc_best rc_worst
+
+Loading LEF file LIBS/lef/gsclib045.fixed2.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file LIBS/lef/MEM2_128X32.lef ...
+
+Loading LEF file LIBS/lef/MEM1_256X32.lef ...
+
+Loading LEF file LIBS/lef/pads.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'BUMPCELL' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'PDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PDI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[0]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[1]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[2]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[3]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[4]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[5]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[6]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A[7]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'CE' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'CK' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[0]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[10]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[11]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[12]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[13]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'D[14]' in macro 'MEM1_256X32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/viewDefinition.tcl
+Reading slow timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/max/slow.lib' ...
+Read 477 cells in library 'gpdk045bc' 
+Reading slow timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/max/MEM1_256X32_slow.lib' ...
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/icd17/23BVD1040/Solthera/LIBS/lib/max/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM1_256X32' 
+Reading slow timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/max/MEM2_128X32_slow.lib' ...
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/icd17/23BVD1040/Solthera/LIBS/lib/max/MEM2_128X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM2_128X32' 
+Reading fast timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/min/fast.lib' ...
+**WARN: (TECHLIB-9153):	Duplicate definition for attribute 'dont_use' encountered. The last definition will be retained. (File /home/icd17/23BVD1040/Solthera/LIBS/lib/min/fast.lib, Line 19302)
+Read 477 cells in library 'gpdk045wc' 
+Reading fast timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/min/MEM1_256X32_slow.lib' ...
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/icd17/23BVD1040/Solthera/LIBS/lib/min/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM1_256X32' 
+Reading fast timing library '/home/icd17/23BVD1040/Solthera/LIBS/lib/min/MEM2_128X32_slow.lib' ...
+**ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/icd17/23BVD1040/Solthera/LIBS/lib/min/MEM2_128X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM2_128X32' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=34.5M, fe_cpu=0.22min, fe_real=0.52min, fe_mem=1128.1M) ***
+% Begin Load netlist data ... (date=06/16 13:00:02, mem=1043.8M)
+*** Begin netlist parsing (mem=1128.1M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OA22XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OA22XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 6 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/leon.v.gz'
+
+*** Memory Usage v#1 (Current mem = 1180.125M, initial mem = 483.883M) ***
+*** End netlist parsing (cpu=0:00:00.4, real=0:00:01.0, mem=1180.1M) ***
+% End Load netlist data ... (date=06/16 13:00:03, total cpu=0:00:00.4, real=0:00:01.0, peak res=1115.3M, current mem=1114.7M)
+Top level cell is leon.
+Hooked 958 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell leon ...
+*** Netlist is unique.
+** info: there are 12590 modules.
+** info: there are 36384 stdCell insts.
+** info: there are 4 macros.
+
+*** Memory Usage v#1 (Current mem = 1281.609M, initial mem = 483.883M) ***
+*info: set bottom ioPad orient R0
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+Loading preference file /home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/gui.pref.tcl ...
+**WARN: (IMPSYT-3046):	Unknown preference name "BlockSnapRule".
+**WARN: (IMPSYT-3004):	Option ConstraintUserXGrid is obsolete and will be removed in future release.  Use 'setFPlanMode -user_define_grid' instead. To avoid this warning and to ensure compatibility with  future releases, please remove the obsolete preference from your script.
+**WARN: (IMPSYT-3004):	Option ConstraintUserYGrid is obsolete and will be removed in future release.  Use 'setFPlanMode -user_define_grid' instead. To avoid this warning and to ensure compatibility with  future releases, please remove the obsolete preference from your script.
+**WARN: (IMPSYT-3004):	Option ConstraintUserXOffset is obsolete and will be removed in future release.  Use 'setFPlanMode -user_define_grid' instead. To avoid this warning and to ensure compatibility with  future releases, please remove the obsolete preference from your script.
+**WARN: (IMPSYT-3004):	Option ConstraintUserYOffset is obsolete and will be removed in future release.  Use 'setFPlanMode -user_define_grid' instead. To avoid this warning and to ensure compatibility with  future releases, please remove the obsolete preference from your script.
+**WARN: (IMPSYT-3046):	Unknown preference name "SnapAllCorners".
+**WARN: (IMPSYT-3046):	Unknown preference name "UserGridUnit".
+**WARN: (IMPSYT-3046):	Unknown preference name "GuideSnapRule".
+**WARN: (IMPSYT-3046):	Unknown preference name "InstDisplayThreshold".
+**WARN: (IMPSYT-3046):	Unknown preference name "WireDisplayCheck2D".
+**WARN: (IMPSYT-3046):	Unknown preference name "WireDisplayThreshold".
+**WARN: (IMPSYT-3046):	Unknown preference name "DisplayPlaceFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoBlockFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoInstFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoModuleFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoIoCellFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoBlackBoxFlightLine".
+**WARN: (IMPSYT-3046):	Unknown preference name "NoClockFlightline".
+**WARN: (IMPSYT-3046):	Unknown preference name "OnlyClockFlightline".
+**WARN: (IMPSYT-3046):	Unknown preference name "MoveMacrosWithGuide".
+**WARN: (IMPSYT-3046):	Unknown preference name "MoveMacrosWithRegion".
+**WARN: (IMPSYT-3046):	Unknown preference name "MoveStdCellWithGuide".
+**WARN: (IMPSYT-3046):	Unknown preference name "MoveStdCellWithRegion".
+**WARN: (IMPSYT-3046):	Unknown preference name "MoveStdCellWithFence".
+**WARN: (EMS-27):	Message (IMPSYT-3046) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+**WARN: (IMPTR-9998):	The setTrialRouteMode command is obsolete and should not be used anymore.  It still works in this release but will be removed in a future release.  You should change to use setRouteMode to set modes for earlyGlobalRoute which is the replacement tool for trialRoute.
+**WARN: (IMPTR-9998):	The setTrialRouteMode command is obsolete and should not be used anymore.  It still works in this release but will be removed in a future release.  You should change to use setRouteMode to set modes for earlyGlobalRoute which is the replacement tool for trialRoute.
+**WARN: (IMPTR-9998):	The setTrialRouteMode command is obsolete and should not be used anymore.  It still works in this release but will be removed in a future release.  You should change to use setRouteMode to set modes for earlyGlobalRoute which is the replacement tool for trialRoute.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+Total number of usable buffers: 8
+List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+Total number of unusable buffers: 8
+List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 10
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+Total number of unusable inverters: 9
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/leon.fp.gz (mem = 1289.8M).
+% Begin Load floorplan data ... (date=06/16 13:00:03, mem=1207.4M)
+*info: reset 49224 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 1977170 1410020)
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+ ... processed partition successfully.
+There are 555 nets with weight being set
+There are 555 nets with bottomPreferredRoutingLayer being set
+There are 555 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=06/16 13:00:04, total cpu=0:00:00.1, real=0:00:01.0, peak res=1216.1M, current mem=1216.1M)
+Loading place ...
+% Begin Load placement data ... (date=06/16 13:00:04, mem=1216.1M)
+Reading placement file - /home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/leon.place.gz.
+** Reading stdCellPlacement "/home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/leon.place.gz" ...
+*** Completed restorePlace (cpu=0:00:00.1 real=0:00:00.0 mem=1295.9M) ***
+Total net length = 1.201e+06 (6.799e+05 5.214e+05) (ext = 7.828e+04)
+% End Load placement data ... (date=06/16 13:00:04, total cpu=0:00:00.1, real=0:00:00.0, peak res=1216.2M, current mem=1216.2M)
+*** Checked 4 GNC rules.
+*** Applying global-net connections...
+*** Applied 4 GNC rules (cpu = 0:00:00.0)
+% Begin Load routing data ... (date=06/16 13:00:04, mem=1217.1M)
+Reading routing file - /home/icd17/23BVD1040/Solthera/DATA/route.enc.dat/leon.route.gz.
+Reading Innovus routing data (Created by Innovus v15.10-p002_1 on Fri Jul 17 08:47:38 2015 Format: 15.1) ...
+Un-suppress "**WARN ..." messages.
+*** Total 37111 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.3 real=0:00:01.0 mem=1353.6M) ***
+% End Load routing data ... (date=06/16 13:00:05, total cpu=0:00:00.3, real=0:00:01.0, peak res=1275.9M, current mem=1275.9M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPIMEX-4008):	Variable 'lsgOCPGainMult' is no longer supported in user data manager and will be ignored.
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_minmax_delay_segmentation' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_number_worker_thread' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_disable_inferred_clock_gating_checks_sequential' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_case_analysis_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_pulse_width_check' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_efficient_input_output_delay_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_pessimistic_cppr_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_minmax_delay_mode' specified
+**ERROR: (GLOBAL-105):	Unknown global 'timing_enable_backward_compatible_path_adjust_mode' specified
+Message <GLOBAL-105> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File LIBS/captbl/worst/capTable ...
+Cap table was created using Encounter 09.12-e135_1.
+Process name: GPDK45.
+Reading Capacitance Table File LIBS/captbl/best/capTable ...
+Cap table was created using Encounter 09.12-e135_1.
+Process name: GPDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_slow_max
+    RC-Corner Name        : rc_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : 'LIBS/captbl/worst/capTable'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+    RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+    RC-Corner Technology file: 'LIBS/qx/qrcTechFile'
+ 
+ Analysis View: func_fast_min
+    RC-Corner Name        : rc_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : 'LIBS/captbl/best/capTable'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34 {1.34 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.96 {0.96 1 1}
+    RC-Corner PostRoute XCap Factor       : 1.22 {1.22 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969 {0.969 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1.34 {1.34 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1.22 {1.22 1 1} 
+    RC-Corner Technology file: 'LIBS/qx/qrcTechFile'
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+The lower process node is set using setDesignMode and the technology file for TQuantus extraction specified. Therefore, the default value for PostRoute extraction mode's effortLevel(-effortLeveloption of the setExtractRCMode) changed from 'low' to 'medium'.
+% Begin Loading timing constraints ... (date=06/16 13:00:05, mem=1310.4M)
+Reading timing constraints file 'DATA/route.enc.dat/libs/mmmc/functional_func_slow_max.sdc' ...
+Current (total cpu=0:00:15.5, real=0:00:35.0, peak res=1557.1M, current mem=1557.1M)
+leon
+**WARN: (TCLCMD-1142):	Virtual clock 'my_clk_v1' is being created with no source objects. (File DATA/route.enc.dat/libs/mmmc/functional_func_slow_max.sdc, Line 9).
+
+**WARN: (TCLCMD-1142):	Virtual clock 'my_clk_v2' is being created with no source objects. (File DATA/route.enc.dat/libs/mmmc/functional_func_slow_max.sdc, Line 10).
+
+**WARN: (TCLCMD-1142):	Virtual clock 'my_clk_v0' is being created with no source objects. (File DATA/route.enc.dat/libs/mmmc/functional_func_slow_max.sdc, Line 17).
+
+Number of path exceptions in the constraint file = 23
+INFO (CTE): Reading of timing constraints file DATA/route.enc.dat/libs/mmmc/functional_func_slow_max.sdc completed, with 3 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1676.8M, current mem=1676.8M)
+Current (total cpu=0:00:15.7, real=0:00:35.0, peak res=1676.8M, current mem=1676.8M)
+% End Loading timing constraints ... (date=06/16 13:00:06, total cpu=0:00:00.3, real=0:00:00.0, peak res=1676.8M, current mem=1676.8M)
+**WARN: (IMPIMEX-10014):	The current design data being restored: '/home/icd17/23BVD1040/Solthera/DATA/route.enc.dat' has been saved with an older structure. When restoring a subset of views for this database, derate information for inactive delay corners may be inaccesible in the current session. A newer database structure allows more flexibility for change the active view list in-session. To update the current database, you need to restore the design with all views active - and then the next save will update it to the new model.
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=06/16 13:00:06, mem=1683.3M)
+% End Load power constraints ... (date=06/16 13:00:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1683.3M, current mem=1682.9M)
+% Begin load AAE data ... (date=06/16 13:00:06, mem=1682.9M)
+% End load AAE data ... (date=06/16 13:00:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1682.9M, current mem=1682.9M)
+Total number of combinational cells: 317
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+Total number of usable buffers: 8
+List of unusable buffers: CLKBUFX2 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+Total number of unusable buffers: 8
+List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 10
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+Total number of unusable inverters: 9
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY3X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 15.10-p002_1. They will be removed in the next release. 
+lib_build_timing_cond_default_arc
+timing_build_all_hierarchical_pins
+timing_enable_default_delay_arc
+timing_dynamic_loop_breaking
+timing_enable_minmax_delay_segmentation
+timing_latch_budget_mode_compatibility
+timing_number_worker_thread
+timing_disable_inferred_clock_gating_checks_sequential
+timing_disable_default_arc
+timing_enable_backward_compatible_case_analysis_mode
+timing_report_backward_compatible_max_paths_reporting
+timing_aocv_slack_threshold
+timing_enable_backward_compatible_pulse_width_check
+timing_enable_efficient_input_output_delay_mode
+timing_enable_backward_compatible_cppr_mode
+timing_enable_backward_compatible_pessimistic_cppr_mode
+timing_aocv_enable_gba_combine_launch_capture
+timing_disable_invalid_clock_check
+timing_enable_backward_compatible_path_adjust_mode
+timing_enable_backward_compatible_clock2clock_path_exception_mode
+timing_enable_backward_compatible_cppr_branch_pin_mode
+#% End load design ... (date=06/16 13:00:06, total cpu=0:00:03.7, real=0:00:05.0, peak res=1685.2M, current mem=1683.5M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200          131  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPSYT-3004          4  %s                                       
+WARNING   IMPSYT-3046         43  Unknown preference name "%s".            
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPTR-9998           3  The setTrialRouteMode command is obsolet...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   IMPIMEX-10014        1  The current design data being restored: ...
+WARNING   IMPIMEX-4008         2  Variable '%s' is no longer supported in ...
+ERROR     GLOBAL-105          22  Unknown global '%s' specified            
+WARNING   TCLCMD-1142          3  Virtual clock '%s' is being created with...
+WARNING   TCLCMD-1496          1  The option '%s' specified for 'timing_so...
+ERROR     TECHLIB-1198         4  The 'index_%d' is defined but its corres...
+WARNING   TECHLIB-9153         1  Duplicate definition for attribute '%s' ...
+*** Message Summary: 1151 warning(s), 26 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> fit
+<CMD> zoomBox -559.18250 -87.47950 1338.85300 824.88650
+<CMD> zoomBox -849.54750 -148.92550 1383.43550 924.44650
+<CMD> zoomBox -1191.15350 -221.21450 1435.88550 1041.57600
+<CMD> zoomBox -1453.85750 -221.21450 1173.18150 1041.57600
+<CMD> zoomBox -1191.15350 -221.21450 1435.88550 1041.57600
+<CMD> zoomBox -1453.85750 -221.21450 1173.18150 1041.57600
+Loading  (leon)
+Traverse HInst (leon)
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> fit
+<CMD> setDrawView place
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> fit
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> zoomOut
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomIn
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> fit
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set init_design_settop 0
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {LIBS/lef/gsclib045.fixed2.lef LIBS/lef/MEM2_128X32.lef LIBS/lef/MEM1_256X32.lef LIBS/lef/pads.lef}
+<CMD> set init_mmmc_file DATA/mmmc.tcl
+<CMD> set init_pwr_net VDD
+<CMD> set init_verilog DATA/leon.v.gz
+<CMD> init_design
+**ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Jun 16 13:09:33 2026
+  Total CPU time:     0:00:37
+  Total real time:    0:10:04
+  Peak memory (main): 2227.38MB
+
+
+*** Memory Usage v#1 (Current mem = 2661.977M, initial mem = 483.883M) ***
+*** Message Summary: 1151 warning(s), 27 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:34.3, real=0:10:02, mem=2662.0M) ---

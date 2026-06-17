@@ -1,0 +1,4 @@
+relativePlace proc0/cmem0/dtags0/u0/id0 CORE -orientation MX -relation B -alignedBy R -xSpace 5.0000 -ySpace 5.0000
+relativePlace proc0/cmem0/itags0/u0/id0 proc0/cmem0/dtags0/u0/id0 -orientation R0 -relation T -alignedBy R -xSpace 0.0000 -ySpace 15.0000
+relativePlace proc0/cmem0/idata0/u0/id0 proc0/cmem0/dtags0/u0/id0 -orientation R180 -relation L -alignedBy B -xSpace 15.0000 -ySpace 0.0000
+relativePlace proc0/cmem0/ddata0/u0/id0 proc0/cmem0/idata0/u0/id0 -orientation MY -relation T -alignedBy R -xSpace 0.0000 -ySpace 15.0000

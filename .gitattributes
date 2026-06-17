@@ -1,0 +1,2 @@
+LIBS/qx/qrcTechFile filter=lfs diff=lfs merge=lfs -text
+DATA/route.enc.dat/libs/mmmc/qrcTechFile filter=lfs diff=lfs merge=lfs -text
